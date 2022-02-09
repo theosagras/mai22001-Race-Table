@@ -872,7 +872,7 @@ function removeKey(evt) {
 
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker
-        .register('/pwa-examples/a2hs/sw.js')
+      .register('/mai22001-Race-Table/sw.js')
         .then(() => { console.log('Service Worker Registered'); });
 }
 
