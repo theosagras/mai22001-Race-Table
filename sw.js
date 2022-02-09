@@ -5,7 +5,7 @@ self.addEventListener('install', (e) => {
             '/mai22001-Race-Table/index.html',
             '/mai22001-Race-Table/uomTrack.js',
             '/mai22001-Race-Table/main.css',
-            '/mai22001-Race-Table/assets/uomTitle.jpg',
+            '/mai22001-Race-Table/assets/uomTitle.png',
             '/mai22001-Race-Table/assets/rubbish.svg',
             '/mai22001-Race-Table/assets/copy.svg',
         ])),
