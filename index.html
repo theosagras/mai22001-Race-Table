@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table - Race</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="uomTrack.js" defer></script>
+    <link rel="manifest" href="manifest.webmanifest">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+
+
+    <header>
+        <button class="add-button">Add to home screen</button>
+        <img src="assets/uomTitle.png" alt="UOM" width="50"><br> ΠΑΝΕΠΙΣΤΗΜΙΟ ΜΑΚΕΔΟΝΙΑΣ<br>Π.Μ.Σ. στην Εφαρμοσμένη Πληροφορική
+        <br> Επιστήμη και Τεχνολογία Η/Υ (Computer Science and Technology)
+
+        <nav>
+            <a href=#title>Τίτλος</a>
+            <a href=#ilo>Υλοποίηση</a>
+            <a href=#contact>Επικοινωνία</a>
+        </nav>
+
+
+    </header>
+
+
+
+    <article class="ekfonisi" id="title">
+        <div class="insideTitle">
+            <h2 class="titleekfonisis">Στοιχεία εργασίας &nbsp;</h2>
+
+            <h3>Στοιχεία μεταπτυχιακού φοιτητή:<br>&nbsp; &nbsp; &nbsp; Αγραφιώτης Θεοφάνης mai22001<br>
+            </h3>
+            <h3>Τίτλος:<br>&nbsp; &nbsp; &nbsp; 3η Εργασία: Web Application</h3>
+            <h3>Περιγραφή:</h3>
+
+            <p>Ολοκλήρωση της λειτουργικότητας της σελίδας των 2 πρώτων εργασιών ως πλήρη εφαρμογή ιστού, υλοποιώντας τα ακόλουθα:
+            </p>
+            <ul>
+                <li>Αρχικό setup δήλωσης σταθερών στοιχείων πίνακα δεδομένων (π.χ. αγώνισμα 100m, 5km, πλήθος αγωνιζομένων, τύποι στηλών πίνακα κ.λπ.).</li>
+                <li>Δημιουργία PWA: ανάρτηση στο github (ή οποιοδήποτε https secure context site), δημιουργία manifest και service workers, έτσι ώστε να μπορεί να γίνει "εγκατάστάσιμο" (installable). Αποθήκευση όλων των δεδομένων στο localStorage</li>
+                <li> Άλλες προαιρετικές ιδέες μόνον αν σας εξπηρετούν:
+                    <ul>
+                        <li> Επικοινωνία με οποιαδήποτε μορφή backend</li>
+                        <li> Δημιουργία γραφημάτων</li>
+                        <li> Τήρηση πολλαπλών πινάκων αθλημάτων</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>Τύπος εργασίας:<br>&nbsp; &nbsp; &nbsp; Ατομική εργασία </h3>
+        </div>
+    </article>
+
+
+
+    <article class="setup" id="setup">
+
+        <h2 class="titleekfonisis">Αρχικό Setup&nbsp;</h2>
+        <div>
+            <label>Κατηγορία: &nbsp;   </label>
+            <select id="categoryRace">           
+                <option value="Δρόμοι ταχύτητας" selected>Δρόμοι ταχύτητας</option>
+                <option value="Δρόμοι με εμπόδια">Δρόμοι με εμπόδια</option>
+                <option value="Δρόμοι μεσαίων αποστάσεων">Δρόμοι μεσαίων αποστάσεων</option>
+                <option value="Δρόμοι μεγάλων αποστάσεων">Δρόμοι μεγάλων αποστάσεων</option>     
+             </select>
+        </div>
+        <div id="whichRaceDiv">
+            <label>Αγώνισμα:&nbsp&nbsp   </label>
+            <select id="whichRace">           
+            </select>
+        </div>
+        <div id="nrAthletesDiv">
+            <label>Αριθμός Αγωνιζομένων:  &nbsp </label>
+            <input id="nrAthletes" type="number" value="8" min="2" max="30" step="1"><br>
+
+
+            </select>
+        </div>
+        <div>
+            <label>Εμφάνιση Στηλών:  &nbsp </label><br>
+            <label>Per Best:  </label>
+            <input id="colPerBestShowYN" type="checkbox" checked>
+            <span>Country:
+                <input id="colCountryShowYN" type="checkbox" checked>
+             </span>
+            <span>Age:  
+            <input id="colAgeShowYN" type="checkbox" checked>
+        </span>
+        </div>
+        <div>
+            <button id="btnNext">Επόμενο</button>
+        </div>
+        <div>
+            <button id="btnLoadFromSetup">Φόρτωση από local storage</button>
+        </div>
+
+
+    </article>
+
+
+
+    <article class="ilopoihsh" id="ilo">
+        <h2 class="titleekfonisis">Πίνακας&nbsp;</h2>
+
+        <h4 class="uomTrack"> Ταξινόμηση γίνεται με κλικ στις επικεφαλίδες του πινακα. Με νέο κλικ αλλάζει κατεύθυνση η ταξινόμηση. <br>
+        </h4>
+
+        <table class="uomTrack">
+            <caption id="tableCaption"></caption>
+
+            <thead>
+                <tr>
+                    <td id="btnCountry">Country</td>
+                    <td id="btnName">Name</td>
+                    <td id="btnAge">Age</td>
+                    <td id="btnPBest">Per. Best</td>
+                    <td id="btnTime">Time</td>
+
+                </tr>
+                <tr>
+
+            </thead>
+            <tbody>
+
+                <tr id="trForClone">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+            </tbody>
+            <tfoot>
+            </tfoot>
+
+        </table>
+        <div>
+            <p>Φίλτρα:</p>
+            <span> <button class='buttonfilters' id="btnFilterCountry">Country</button></span>
+            <span> <button class='buttonfilters' id="btnFilterAge">Age</button></span>
+            <span> <button class='buttonfilters' id="btnFilterPerBest">Per.Best</button></span>
+        </div>
+        <div>
+            <p>Επιλογές:</p>
+            <span>
+            <button id="btnLoad">φόρτωση  από local storage</button>    
+        </span>
+            <span><button id="btnSave">Αποθήκευση πίνακα στο local storage</button>
+            </span>
+
+        </div>
+        <div>
+            <span><button id="btnDeleteStorage">Διαγραφή local storage</button>
+            </span>
+            <span><button id="btnNewTable">Δημιουργία Νέου Πίνακα</button>
+            </span>
+        </div>
+
+    </article>
+
+
+
+
+
+    <footer>
+
+
+    </footer>
+</body>
+
+</html>
