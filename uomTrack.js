@@ -869,13 +869,13 @@ function removeKey(evt) {
 
 
 // Register service worker to control making site work offline
-/*
+
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker
         .register('/mai22001-Race-Table/sw.js')
         .then(() => { console.log('Service Worker Registered'); });
 }
-*/
+
 
 // Code to handle install prompt on desktop
 
