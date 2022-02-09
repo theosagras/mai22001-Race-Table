@@ -1,6 +1,6 @@
 self.addEventListener('install', (e) => {
     e.waitUntil(
-        caches.open('mai22001-store').then((cache) => cache.addAll([
+        caches.open('mai22001').then((cache) => cache.addAll([
             '/mai22001-Race-Table/',
             '/mai22001-Race-Table/index.html',
             '/mai22001-Race-Table/uomTrack.js',
