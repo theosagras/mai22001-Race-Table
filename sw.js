@@ -1,13 +1,13 @@
 self.addEventListener('install', (e) => {
     e.waitUntil(
         caches.open('mai22001-store').then((cache) => cache.addAll([
-            '/https://theosagras.github.io/mai22001-Race-Table/',
-            '/https://theosagras.github.io/mai22001-Race-Table/index.html',
-            '/https://theosagras.github.io/mai22001-Race-Table/uomTrack.js',
-            '/https://theosagras.github.io/mai22001-Race-Table/main.css',
-            '/https://theosagras.github.io/mai22001-Race-Table/assets/uomTitle.jpg',
-            '/https://theosagras.github.io/mai22001-Race-Table/assets/rubbish.svg',
-            '/https://theosagras.github.io/mai22001-Race-Table/assets/copy.svg',
+            '/mai22001-Race-Table/',
+            '/mai22001-Race-Table/index.html',
+            '/mai22001-Race-Table/uomTrack.js',
+            '/mai22001-Race-Table/main.css',
+            '/mai22001-Race-Table/assets/uomTitle.jpg',
+            '/mai22001-Race-Table/assets/rubbish.svg',
+            '/mai22001-Race-Table/assets/copy.svg',
         ])),
     );
 });
