@@ -1,0 +1,15 @@
+{
+  "background_color": "purple",
+  "description": "Ολοκλήρωση της λειτουργικότητας της σελίδας των 2 πρώτων εργασιών ως πλήρη εφαρμογή ιστού",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "icon/icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "name": "mai22001 - project 3",
+  "short_name": "Table - Race",
+  "start_url": "/theosagras/mai22001-Race-Table.html"
+}
