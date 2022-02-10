@@ -9,28 +9,10 @@ let emptycells = true;
 let filterColAge;
 let filterColCountry;
 let filterColPerBest;
-const myHeading = document.getElementsByClassName('uomTrack')[0];
-myHeading.style.color = 'white';
+const myHeading = document.getElementById('headUomTrack');
 
-myHeading.style.backgroundColor = '#618685';
-myHeading.style.width = '80%';
-myHeading.style.marginLeft = 'auto';
-myHeading.style.marginRight = 'auto';
-myHeading.style.textAlign = 'center';
-const myTable = document.getElementsByClassName('uomTrack')[1];
+const myTable = document.getElementById('TableUomTrack');
 
-myTable.style.color = 'white';
-
-myTable.style.backgroundColor = '#618685';
-myTable.style.tableLayout = 'auto';
-myTable.style.fontSize = '20px';
-myTable.style.textAlign = 'center';
-myTable.style.borderCollapse = 'separate';
-myTable.style.width = '85%';
-myTable.style.marginLeft = 'auto';
-myTable.style.marginRight = 'auto';
-myTable.style.marginBottom = '30px';
-myTable.caption.style.fontSize = '30px';
 
 const contents = document.getElementById('ilo');
 //contents.style.display = 'none';
@@ -177,7 +159,7 @@ for (var roww = 0; roww < tBodyOfMyTable.rows.length; roww++) {
 document.getElementById('btnNext').addEventListener('click', function(evt) {
     //τιτλος
     let whichRace = whichRaceSelection.value;
-    myTable.caption.innerHTML = "<strong>Αγώνας: &nbsp" + whichRace + "</strong>";
+    myTable.caption.innerHTML = "<strong>Αγώνας: &nbsp" + whichRace + '</strong>';
     //δημιουργία πίνακα
     instertEmptyRows(nrAthletesSelection.value - 1);
 
@@ -345,8 +327,8 @@ function validateAfterChange() {
 
 const tHeadOfMyTable = myTable.getElementsByTagName('thead')[0];
 //Αλλαγή Font style στο head του table
-tHeadOfMyTable.style.fontSize = '30px';
-tHeadOfMyTable.style.fontWeight = 'bold';
+//tHeadOfMyTable.style.fontSize = '30px';
+//tHeadOfMyTable.style.fontWeight = 'bold';
 
 //προσθήκη γραμμής ανάμεσα head και body του table
 var newRow = tHeadOfMyTable.insertRow(1);
