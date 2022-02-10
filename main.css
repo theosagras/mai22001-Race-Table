@@ -234,4 +234,15 @@ div {
     .navigation li:last-of-type a {
         border-bottom: none;
     }
+    .table1 {
+    color: white;
+    background-color: #c1946a;
+    table-layout: fixed;
+    font-size: 20px;
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto
+    }
 }
