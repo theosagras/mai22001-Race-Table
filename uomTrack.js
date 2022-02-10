@@ -146,10 +146,10 @@ for (var roww = 0; roww < tBodyOfMyTable.rows.length; roww++) {
     var cell1 = document.createElement('td'),
         cell2 = document.createElement('td');
     rowA.appendChild(cell1);
-    cell1.innerHTML = '<img src="assets/copy.svg" class="copy" alt="rubbish" width="35" ALIGN=center></td>';
+    cell1.innerHTML = '<img src="assets/copy.svg" class="copy" alt="rubbish" width="25" ALIGN=center></td>';
 
     rowA.appendChild(cell2);
-    cell2.innerHTML = '<img src="assets/rubbish.svg" class="rubbish" alt="copy" width="35" ALIGN=center></td>';
+    cell2.innerHTML = '<img src="assets/rubbish.svg" class="rubbish" alt="copy" width="25" ALIGN=center></td>';
 
 }
 
