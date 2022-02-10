@@ -343,8 +343,6 @@ newRowForStats.innerHTML = "<td colspan='4'>"
 showStatistics();
 
 
-tFootOfMyTable.style.fontSize = '24px';
-
 var trs = myTable.getElementsByTagName("tr");
 var tds = null;
 
@@ -363,7 +361,7 @@ function createInputText(tempCellCValue) {
     inText.style.textAlign = "center";
     inText.style.height = '30px';
     inText.style.width = '90%';
-    inText.style.fontSize = '25px';
+    inText.style.fontSize = '16px';
 
     return inText;
 };

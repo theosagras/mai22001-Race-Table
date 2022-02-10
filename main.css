@@ -25,11 +25,11 @@
 }
 
 .buttonfilters {
-    width: 10em;
+    width: 9em;
 }
 
 div span {
-    margin: 0 10px;
+    margin: 5px 5px 10px 10px;
 }
 
 #categoryRace {
@@ -38,6 +38,11 @@ div span {
 
 #nrAthletes {
     width: 3em;
+}
+
+#countryFilter {
+    margin: 5px;
+    width: 9em;
 }
 
 header {
@@ -211,6 +216,10 @@ div {
     font-size: 20px;
 }
 
+#tfoot {
+    font-Size: 20px;
+}
+
 @media all and (min-width: 801px) and (max-width: 1200px) {
     .main {
         flex: 2;
@@ -228,6 +237,9 @@ div {
     }
     #headUomTrack {
         font-size: 15px;
+    }
+    #tfoot {
+        font-Size: 15px;
     }
 }
 
@@ -264,6 +276,9 @@ div {
     #headUomTrack {
         font-size: 15px;
     }
+    #tfoot {
+        font-Size: 15px;
+    }
 }
 
 @media all and (min-width: 1px) and (max-width: 400px) {
@@ -284,5 +299,8 @@ div {
     }
     #headUomTrack {
         font-size: 10px;
+    }
+    #tfoot {
+        font-Size: 15px;
     }
 }
